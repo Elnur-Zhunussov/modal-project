@@ -2,7 +2,7 @@
   <h1>{{ title }}</h1>
   <p>Welcome...</p>
   <div v-if="showModal">
-    <Modal theme="sale" @close="toggleModal">
+    <Modal theme="sale" @close="toggleModal" :childText="suck">
       <h1>"Sign up for the Giveaway"</h1>
       <p>"Don't miss your chance!"</p>
     </Modal>
@@ -11,7 +11,7 @@
 
   <p>Unwelcome ...</p>
   <div v-if="showModalTwo">
-    <Modal @close="toggleModalTwo">
+    <Modal @close="toggleModalTwo" :childText1="suck">
       <h1>"Go away please!"</h1>
       <p>"LOL"</p>
     </Modal>
