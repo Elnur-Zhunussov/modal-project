@@ -1,7 +1,7 @@
 <template>
   <h1>{{ title }}</h1>
   <p>Welcome...</p>
-  <div v-if="showModal">
+  <div to="modals" v-if="showModal">
     <Modal theme="sale" @close="toggleModal" :childText="suck">
       <h1>"Sign up for the Giveaway"</h1>
       <p>"Don't miss your chance!"</p>
